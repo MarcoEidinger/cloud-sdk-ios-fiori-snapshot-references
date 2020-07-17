@@ -1,10 +1,11 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.2
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "cloud-sdk-ios-fiori-snapshot-references",
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "cloud-sdk-ios-fiori-snapshot-references",
@@ -19,9 +20,9 @@ let package = Package(
     targets: [
         .target(
             name: "cloud-sdk-ios-fiori-snapshot-references",
-            dependencies: [],
-            resources: [
-            .copy("FioriCharts/LineChartSnapshotTests/testLineChartPositiveValuesSingleSeries-iPadPro11_landscape_light.1.png")]
+            dependencies: []
+//            resources: [
+//            .copy("FioriCharts/LineChartSnapshotTests/testLineChartPositiveValuesSingleSeries-iPadPro11_landscape_light.1.png")]
         ),
     ]
 )
